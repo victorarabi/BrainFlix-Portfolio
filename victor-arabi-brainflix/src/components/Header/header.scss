@@ -1,0 +1,23 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/colors' as *;
+//header component
+.header {
+  width: 100%;
+  height: fit-content;
+  padding: 1rem 1rem;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  @include tablet {
+    padding: 1.5rem 1.5rem;
+    flex-direction: row;
+  }
+  @include desktop {
+    max-width: 63.75rem;
+    margin: auto;
+  }
+}

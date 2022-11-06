@@ -1,0 +1,23 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/colors' as *;
+//source for avatar img
+$avatar-img-src: '../../assets/images/Mohan-muruge.jpg';
+//avatar compomnent
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: $white;
+  flex-shrink: 0;
+  flex-grow: 0;
+  &--img {
+    background-image: url($avatar-img-src);
+    background-position: left;
+    background-size: cover;
+  }
+  &--mercury {
+    background-color: $mercury;
+  }
+}

@@ -1,0 +1,53 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/colors' as *;
+//videocard component
+.video-card {
+  width: 100%;
+  max-width: 20rem;
+  padding: 1rem 0 0;
+  display: flex;
+  color: $brainFlix-Black;
+  align-items: center;
+  @include tablet {
+    padding: 1.5rem 0 0 0;
+  }
+  @include desktop {
+    width: 20rem;
+  }
+  &__container {
+    width: 46%;
+    min-width: 5.865rem;
+    max-width: 5.865rem;
+    height: 3.8rem;
+    border-radius: 0.25rem;
+    background-color: $mercury;
+    overflow: hidden;
+  }
+  &__poster {
+    width: 100%;
+    height: 4.4rem;
+    background-position: center;
+    background-size: cover;
+  }
+  &__wrap {
+    padding-left: 1rem;
+    flex-grow: 2;
+    @include tablet {
+      padding-left: 1.5rem;
+      flex-grow: 0;
+    }
+  }
+  &__title {
+    padding-bottom: 0.5rem;
+    @extend .subheader;
+  }
+  &__channel {
+    @extend .m-copy;
+    @include tablet {
+      font-size: $body-copy-size;
+      line-height: $body-copy-height;
+    }
+  }
+}

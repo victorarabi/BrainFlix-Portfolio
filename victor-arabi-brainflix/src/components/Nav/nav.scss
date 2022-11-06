@@ -1,0 +1,24 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/colors' as *;
+//nav component
+.nav {
+  width: 100%;
+  padding-top: 1rem;
+  @include tablet {
+    padding-top: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+  &__container {
+    width: 100%;
+    padding-bottom: 1rem;
+    display: flex;
+    @include tablet {
+      width: fit-content;
+      padding: 0 1.5rem 0;
+    }
+  }
+}

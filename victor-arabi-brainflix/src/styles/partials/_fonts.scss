@@ -1,0 +1,65 @@
+// Importing Avenir Next Regular font
+@font-face {
+    font-family: "avenir_regular";
+    src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype"),
+         url("../../assets/fonts/alt/AvenirNextLTPro.ttf") format("truetype");
+    font-weight: 400;
+}
+
+// importing Avenir Next bold font
+@font-face {
+    font-family: "avenir_bold";
+    src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype"),
+         url("../../assets/fonts/alt/AvenirNextLTProBold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+//Fonts for text styles
+
+//Page headers
+.m-page-header {
+    font-family: "avenir_bold";
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+//
+.m-section-header {
+    font-family: "avenir_bold";
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+}
+
+//subheaders
+.subheader {
+    font-family: "avenir_bold";
+    font-size: 0.813rem;
+    line-height: 1.125rem;
+}
+
+//Body copy
+.m-copy {
+    font-family: "avenir_regular";
+    font-size: 0.813rem;
+    line-height: 1.125rem;
+}
+
+//labels and buttons copy
+.label {
+    font-family: "avenir_regular";
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+}
+
+//Desktop & Tablets variables
+
+//page header
+$page-header-size: 2.063rem;
+$page-header-height: 2.75rem;
+
+//Subheader
+$subheader-size: 0.875rem;
+$subheader-height: 1.375rem;
+
+//Body copy
+$body-copy-size: 0.875rem;
+$body-copy-height: 1.375rem;

@@ -1,0 +1,22 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/colors' as *;
+//hero component
+.hero {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  &__player {
+    width: 100%;
+    min-height: 5rem;
+    max-height: 30rem;
+    @include tablet {
+      max-width: 48rem;
+      max-height: 40rem;
+    }
+  }
+}

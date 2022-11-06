@@ -1,0 +1,44 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/colors' as *;
+//comments card component
+.card {
+  width: 100%;
+  padding: 1rem 0;
+  border-bottom: 0.063rem solid $mercury;
+  @extend .m-copy;
+  display: flex;
+  @include tablet {
+    padding: 1.5rem 0;
+    font-size: $body-copy-size;
+    line-height: $body-copy-height;
+  }
+  @include desktop {
+    padding-right: 1.5rem;
+    border-top: 0.063rem solid $mercury;
+    border-bottom: none;
+  }
+  &__container {
+    padding-left: 1rem;
+    flex-grow: 1;
+    @include tablet {
+      padding-left: 1.5rem;
+    }
+  }
+  &__label-container {
+    padding-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__name {
+    @extend .subheader;
+    color: $brainFlix-Black;
+  }
+  &__timestamp {
+    color: $silver;
+  }
+  &__comment {
+    color: $brainFlix-Black;
+  }
+}

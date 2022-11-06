@@ -1,0 +1,9 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/colors' as *;
+
+.logo {
+  max-height: 1.563rem;
+  max-width: 7.5rem;
+}

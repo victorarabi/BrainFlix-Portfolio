@@ -1,0 +1,36 @@
+@use '../../styles/partials/global' as *;
+@use '../../styles/partials/mixins' as *;
+@use '../../styles/partials/fonts' as *;
+@use '../../styles/partials/colors' as *;
+//search bar component
+.search-bar {
+  height: 2.5rem;
+  margin-right: 1rem;
+  padding-left: 0.75rem;
+  border: 1px solid $mercury;
+  border-radius: 0.25rem;
+  background-color: $alabaster;
+  flex-grow: 2;
+  display: flex;
+  align-items: center;
+  @include tablet {
+    width: 15rem;
+    flex-grow: 0;
+  }
+  &__img {
+    margin-right: 0.5rem;
+  }
+  &__input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: $alabaster;
+    flex-grow: 1;
+    @extend .m-copy;
+    color: $brainFlix-Black;
+    @include tablet {
+      font-size: $body-copy-size;
+      line-height: $body-copy-height;
+    }
+  }
+}
